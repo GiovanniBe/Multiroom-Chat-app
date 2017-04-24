@@ -1,0 +1,23 @@
+{
+  "name": "multichatroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniBe/Multiroom-Chat-app.git"
+  },
+  "author": "GiovanniBe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiovanniBe/Multiroom-Chat-app/issues"
+  },
+  "homepage": "https://github.com/GiovanniBe/Multiroom-Chat-app#readme",
+  "devDependencies": {
+    "mime": "^1.3.4",
+    "socket.io": "^1.7.3"
+  }
+}
