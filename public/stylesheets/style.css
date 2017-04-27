@@ -1,0 +1,31 @@
+
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+#content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#room {
+  background-color: #ddd;
+  margin-bottom: 1em;
+}
+
+#messages {
+  width: 690px;
+  height: 300px;
+  overflow: auto;
+  background-color: #eee;
+  margin-bottom: 1em;
+  margin-right: 10px;
+}

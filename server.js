@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const mime = require('mime');
+const chatServer = require('./lib/server_chat.js');
 
 const cache = {};
 
@@ -61,7 +62,7 @@ const server = http.createServer(function(req, res) {
   if (req.url == '/') {
     filePath = 'public/index.html';
   } else {
-    filePath = 'public' + request.url;
+    filePath = 'public' + req.url;
   }
 
   let abstractPath = './' + filePath;
@@ -73,3 +74,5 @@ const server = http.createServer(function(req, res) {
 server.listen(3000, function() {
   console.log('Server listening on port 3000..');
 });
+
+server_chat.listen(server);
